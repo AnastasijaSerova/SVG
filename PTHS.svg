@@ -4,7 +4,7 @@
 			:root {
 				--roof: #2E3841;
 				--red_roof: #A03B4B;
-				--wall: #E2C19E;
+				--wall: #FDD5D2;
 				--wall_border: #BFA78B;
 				--white: #ffffff;
 				--ball: #7A7C7C;

@@ -1,0 +1,122 @@
+<svg width="400" height="800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+	<defs>
+		<style>
+			:root {
+				--brown: #76450a;
+			}
+			@keyframes move_person_1 {
+				0% {offset-distance: 0%;}
+				12.5% {offset-distance: 16%;}
+				25% {offset-distance: 34%;}
+				37.5% {offset-distance: 50%;}
+				50% {offset-distance: 66%;}
+				62.5% {offset-distance: 84%;}
+				75% {offset-distance: 100%;}
+				87.5% {offset-distance: 100%;}
+				100% {offset-distance: 100%;}
+			}
+			@keyframes move_person_2 {
+				0% {offset-distance: 0%;}
+				12.5% {offset-distance: 17.4%;}
+				25% {offset-distance: 34.2%;}
+				37.5% {offset-distance: 53.2%;}
+				50% {offset-distance: 70.2%;}
+				62.5% {offset-distance: 87%;}
+				75% {offset-distance: 100%;}
+				87.5% {offset-distance: 100%;}
+				100% {offset-distance: 100%;}
+			}
+			@keyframes move_person_3 {
+				0% {offset-distance: 0%;}
+				12.5% {offset-distance: 0%;}
+				25% {offset-distance: 17.4%;}
+				37.5% {offset-distance: 34.2%;}
+				50% {offset-distance: 53.2%;}
+				62.5% {offset-distance: 70.2%;}
+				75% {offset-distance: 87%;}
+				87.5% {offset-distance: 100%;}
+				100% {offset-distance: 100%;}
+			}
+			@keyframes count_1 {
+				12.5%, 100% {opacity: 0;}
+				0%, 12.4% {opacity: 1;}
+			}
+			@keyframes count_2 {
+				0%, 12.4%, 25%, 100% {opacity: 0;}
+				12.5%, 24.9% {opacity: 1;}
+			}
+			@keyframes count_3 {
+				0%, 24.9%, 37.5%, 100% {opacity: 0;}
+				25%, 37.4% {opacity: 1;}
+			}
+			@keyframes count_4 {
+				0%, 37.4%, 50%, 100% {opacity: 0;}
+				37.5%, 49.9% {opacity: 1;}
+			}
+			@keyframes count_5 {
+				0%, 49.9%, 62.5%, 100% {opacity: 0;}
+				50%, 62.4% {opacity: 1;}
+			}
+			@keyframes count_6 {
+				0%, 62.4%, 75%, 100% {opacity: 0;}
+				62.5%, 74.9% {opacity: 1;}
+			}
+			@keyframes count_7 {
+				0%, 74.9%, 87.5%, 100% {opacity: 0;}
+				75%, 87.4% {opacity: 1;}
+			}
+			@keyframes count_8 {
+				0%, 87.4% {opacity: 0;}
+				87.5%, 100% {opacity: 1;}
+			}
+			#person_1 {
+				offset-path: path("M 100 200 C 80 220 50 260 50 300 C 50 340 150 340 150 300 C 150 260 120 220 100 200 C 80 180 50 140 50 100 C 50 60 150 60 150 100 C 150 140 120 180 100 200");
+				animation: move_person_1 8s infinite linear;
+			}
+			#person_2 {
+				offset-path: path("M 100 300 C 150 260 120 220 100 200 C 80 180 50 140 50 100 C 50 60 150 60 150 100 C 150 140 120 180 100 200 C 80 220 50 260 50 300 C 50 340 100 340 100 300");
+				animation: move_person_2 8s infinite linear;
+			}
+			#person_3 {
+				offset-path: path("M 100 100 C 150 140 120 180 100 200 C 80 220 50 260 50 300 C 50 340 150 340 150 300 C 150 260 120 220 100 200 C 80 180 50 140 50 100 C 50 60 100 60 100 100");
+				animation: move_person_3 8s infinite linear;
+			}
+			#counter_1 {animation: count_1 8s infinite linear;}
+			#counter_2 {animation: count_2 8s infinite linear;}
+			#counter_3 {animation: count_3 8s infinite linear;}
+			#counter_4 {animation: count_4 8s infinite linear;}
+			#counter_5 {animation: count_5 8s infinite linear;}
+			#counter_6 {animation: count_6 8s infinite linear;}
+			#counter_7 {animation: count_7 8s infinite linear;}
+			#counter_8 {animation: count_8 8s infinite linear;}
+		</style>
+	</defs>
+	<g font-family="Times New Roman" font-size="22">
+		<text x="140" y="200" id="counter_1">1</text>
+		<text x="140" y="200" id="counter_2">2</text>
+		<text x="140" y="200" id="counter_3">3</text>
+		<text x="140" y="200" id="counter_4">4</text>
+		<text x="140" y="200" id="counter_5">5</text>
+		<text x="140" y="200" id="counter_6">6</text>
+		<text x="140" y="200" id="counter_7">7</text>
+		<text x="140" y="200" id="counter_8">8</text>
+	</g>
+	<g stroke="black" fill="none">
+		<!--PATH-->
+		<path id="path" d="M 100 200 C 120 220 150 260 150 300 C 150 340 50 340 50 300 C 50 260 80 220 100 200 C 120 180 150 140 150 100 C 150 60 50 60 50 100 C 50 140 80 180 100 200"/>
+	</g>
+	<g fill="red">
+		<!--DOTS-->
+		<circle cx="100" cy="200" r="3" />
+		<circle cx="150" cy="300" r="3" />
+		<circle cx="50" cy="300" r="3" />
+		<circle cx="150" cy="100" r="3" />
+		<circle cx="50" cy="100" r="3" />
+	</g>
+	<g stroke="black" fill="none">
+		<!--PERSONS-->
+		<circle id="person_1" cx="0" cy="0" r="5" stroke="black" stroke-width="1" fill="blue" />
+		<circle id="person_2" cx="0" cy="0" r="5" stroke="black" stroke-width="1" fill="green" />
+		<circle id="person_3" cx="0" cy="0" r="5" stroke="black" stroke-width="1" fill="orange" />
+	</g>
+</svg>
